@@ -35,23 +35,23 @@ Welcome to the Angular Weather Dashboard project! This dashboard allows users to
 
 ## Architecture of the project 
 
-1. Components
+1. **Components :**
 Location Search Component: Allows users to search for locations by city name or zip code.
 Current Weather Component: Displays the current weather conditions for a selected location.
 Forecast Component: Shows the weather forecast for the next three days for a chosen location.
 
-3. Services
+3. **Services :**
 The WeatherApiService handles HTTP requests to the WeatherAPI to fetch location data, current weather data, and weather forecast data.
 
-5. API Integration: WeatherAPI
+5. **API Integration: WeatherAPI :**
 The project integrates with the WeatherAPI (WeatherAPI.com) to retrieve weather data for various locations.
 The WeatherAPI provides endpoints for searching locations, fetching current weather data, and obtaining weather forecasts.
 
-7. Styling: SCSS and CSS Frameworks
+7. **Styling: SCSS and CSS Frameworks :**
 Styling is implemented using SCSS .
 Optionally, CSS frameworks like Bootstrap used for rapid styling and layout.
 
-9. Responsiveness
+9. **Responsiveness :**
 The weather dashboard is designed to be responsive and functional on both desktop and mobile devices.
 Responsive design techniques are employed to ensure that the layout and content adapt to different screen sizes and orientations.
 
