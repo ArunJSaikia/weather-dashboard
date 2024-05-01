@@ -1,0 +1,21 @@
+.location-search{
+    margin-top: 40px;
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 25px;
+    
+    .src-button{
+        background-color:  #b8c9ea;
+        color: black;
+        letter-spacing: 1px;  
+    }
+    .form-control{
+        padding: .375rem 2rem !important;
+    }
+    
+}
+@media(max-width: 1024px){
+    .location-search{
+        padding: 30px 20px;
+    }
+}

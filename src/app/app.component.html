@@ -1,0 +1,18 @@
+<section class="weatherDashboard">
+  <div class="heading">Welcome to <b>VANTAGE</b>CIRCLE!</div>
+  <div class="subheading">Check out today's weather information...</div>
+  <app-location-search (goToWeather)="goToWeather($event)"> </app-location-search>
+  <app-current-weather *ngIf="showWeather" [location]="location"></app-current-weather>
+  <app-forecast *ngIf="showWeather" [location]="location"></app-forecast>
+  <div *ngIf="!showWeather">
+    <div class="default-page flex-column">
+      <div>
+       <img src="../assets/no-result.png" alt="Empty Image"> 
+      </div>
+      <div style="font-size: 14px;">
+       No data present for entered zip code/location!!
+      </div>
+   
+     </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<div class="current-weather mt-3" *ngIf="weatherDetails">
+    <div class="weather-info d-flex">
+        <div class="temp d-flex flex-column col-sm-6">
+            <span style="font-size: 70px; height: 80px;"> {{ weatherDetails.current.temp_c }}°C</span> <br>
+            <span class="" style="font-size: 20px;"> {{weatherDetails.location.name}},&nbsp;{{weatherDetails.location.region}}</span>
+        </div>
+        <div class="icon col-sm-6">
+            <img [src]="weatherDetails.current.condition.icon" alt="" style="height: 140px; position: relative; top: -20px;">
+        </div>
+    </div>
+    <div class="other-info d-flex justify-content-around mt-3" style="font-size: 20px;">
+        <span>Wind Speed : &nbsp; {{ weatherDetails.current.wind_kph }} km/h</span>
+        <span>Humidity : &nbsp; {{ weatherDetails.current.humidity }}%</span>
+    </div>
+  </div>
